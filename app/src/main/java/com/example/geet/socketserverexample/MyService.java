@@ -69,6 +69,7 @@ public class MyService extends Service {
                 if(!interrupted()){
                     // create ServerSocket using specified port
                     serverSocket = new ServerSocket(socketServerPORT);
+                    Log.e("Server started: ",getIpAddress()+":"+socketServerPORT);
                     while (true) {
                         // block the call until connection is created and return
                         // Socket object
